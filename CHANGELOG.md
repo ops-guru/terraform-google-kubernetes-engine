@@ -25,6 +25,10 @@ v5.0.0 is a backwards-incompatible release. Please see the [upgrading guide](./d
 
 * All beta functionality removed from non-beta clusters, moved `node_pool_taints` to beta modules [#228]
 
+### Fixed
+
+* Fixed issue with passing a dynamically created Service Account to the module. [#27]
+
 ## [v4.1.0] 2019-07-24
 
 ### Added
@@ -188,6 +192,7 @@ v5.0.0 is a backwards-incompatible release. Please see the [upgrading guide](./d
 [#236]: https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/236
 [#217]: https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/217
 [#234]: https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/234
+[#27]: https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/issues/27
 [#216]: https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/216
 [#214]: https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/214
 [#210]: https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/210
