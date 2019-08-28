@@ -5,6 +5,20 @@ release.
 
 ## Migration Instructions
 
+### Node pool taints
+Previously, node pool taints could be set on all module versions.
+
+Now, to set taints you must use the beta version of the module.
+
+```diff
+ module "kubernetes_engine_private_cluster" {
+-  source  = "terraform-google-modules/kubernetes-engine/google"
++  source  = "terraform-google-modules/kubernetes-engine/google//modules/beta-public-cluster"
+-  version = "~> 4.0"
++  version = "~> 5.0"
+ }
+```
+
 ### Resource simplification
 The `google_container_cluster` and `google_container_node_pool` resources previously were different between regional and zonal clusters. They have now been collapsed into a single resource using the `location` variable.
 
