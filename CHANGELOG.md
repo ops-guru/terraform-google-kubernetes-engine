@@ -11,10 +11,7 @@ Extending the adopted spec, each change should have a link to its corresponding 
 ## [v5.0.0] - 2019-XX-XX
 v5.0.0 is a backwards-incompatible release. Please see the [upgrading guide](./docs/upgrading_to_v5.0.md).
 
-The v5.0.0 module requires using the [2.12 version](https://github.com/terraform-providers/terraform-provider-google/blob/master/CHANGELOG.md#2120-august-01-2019) of the Google provider.
-
 ### Added
-
 * Added support for resource usage export config [#238]
 * Added `sandbox_enabled` variable to use GKE Sandbox [#241]
 * Added `grant_registry_access` variable to grant Container Registry access to created SA [#236]
@@ -25,7 +22,9 @@ The v5.0.0 module requires using the [2.12 version](https://github.com/terraform
 
 ### Changed
 
+* The supported version of the Google provider is [2.12](https://github.com/terraform-providers/terraform-provider-google/blob/master/CHANGELOG.md#2120-august-01-2019)
 * All beta functionality removed from non-beta clusters, moved `node_pool_taints` to beta modules [#228]
+* Enabled metadata-concealment by default [#248]
 
 ### Fixed
 
@@ -188,6 +187,7 @@ The v5.0.0 module requires using the [2.12 version](https://github.com/terraform
 [v0.3.0]: https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/compare/v0.2.0...v0.3.0
 [v0.2.0]: https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/compare/v0.1.0...v0.2.0
 
+[#248]: https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/248
 [#228]: https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/228
 [#238]: https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/238
 [#241]: https://github.com/terraform-google-modules/terraform-google-kubernetes-engine/pull/241
