@@ -405,3 +405,9 @@ variable "authenticator_security_group" {
   default     = null
 }
 
+variable "local_provisioner_command" {
+  type = "string"
+  description = "Local provisioner command"
+  default = null
+}
+

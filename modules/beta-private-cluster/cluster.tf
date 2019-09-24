@@ -200,6 +200,10 @@ resource "google_container_cluster" "primary" {
       security_group = authenticator_groups_config.value.security_group
     }
   }
+
+  provisioner "local-exec" {
+    command = var.local_provisioner_command
+  }
 }
 
 /******************************************
